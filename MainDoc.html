@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalyst Project Logan & Grace</title>
+
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            background-color: lightgoldenrodyellow;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            color: darkcyan;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        h2,
+        h3,
+        h5 {
+            text-align: center;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px darkgray;
+
+        }
+
+        .bodies {
+            text-align: center;
+            padding: 10px 100px;
+        }
+
+        .img01 {
+            width: 100%;
+            border-radius: 16px;
+        }
+
+        h4 {
+            color: darkslateblue;
+        }
+
+        #table01questions {
+            text-align: left;
+            text-shadow: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: lightgoldenrodyellow;
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            font-family: inherit;
+            border: 8px solid slategray;
+            border-right: 0px;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-radius: 8px;
+            margin: 10px;
+            text-align: left;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: wheat;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            padding: 0px 16px;
+            border-radius: 16px;
+        }
+
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .show {
+            display: block;
+        }
+
+        #floatright {
+            float: right;
+        }
+
+        #floatleft {
+            float: left;
+        }
+
+        #lines {
+            margin-left: 50px;
+            margin-right: 50px;
+            color: slategray;
+            border-radius: 16px;
+            border: 4px dashed darkslategray;
+        }
+
+        .waterdroplet {
+            height: 10%;
+            width: 10%;
+            float: right;
+        }
+
+        #Intro {
+            border: 2px solid teal;
+            border-radius: 50px;
+            margin: 0px 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main Title -->
+    <div>
+        <h1>Nucleation (Through Rain Drops)</h1>
+        <h5>Grace Torgerson & Logan Hindley <br>Chemistry 12</h5>
+
+    </div>
+
+
+    <!--Basic Info-->
+    <div>
+        <div>
+
+            <div>
+                <h3>What's This About?</h3>
+                <p id="Intro" class="bodies">For our Catalyst assignment in Chemistry 12, we wanted to look at how rain
+                    is formed through the process of nucleation!
+                    There have been many attempts throughout history to successfully create rain and snow
+                    artificially through cloud seeding, with mixed results. To properly “make” rain, you have to have a
+                    catalyst. The most common catalysts we see in nature for this are aerosol catalysts, namely calcium,
+                    aluminium, or magnesium. These catalysts float through the air and attract water particles to them,
+                    and when they have collected enough particles and have joined with enough others, they will make
+                    rain. However, according to new research, tiny bio-particles or microbes may have a higher influence
+                    on the nucleation of raindrops than we first thought. These aerosole microbes are known as
+                    ice-nucleation active bacteria since they most typically influence snow and hail rather than rain.
+                </p>
+            </div>
+            <h3>What is Nucleation?</h3>
+            <p class="bodies">Nucleation is the initial process that occurs during the formation of a object, such as a
+                rain
+                drop. A bunch of small ions, molecules or atoms arrange themselves in a pattern. These often congregate
+                around a central point, growing in size. This can begin from liquid or a vapour, and it binds itself to
+                form
+                a raindrop or a crystal etc.</p>
+        </div>
+        <div>
+            <h3>What is a Catalyst?</h3>
+            <p class="bodies">A catalyst is a substance that speeds up or increases a chemical reaction, but doesn’t go
+                through
+                any change itself. In this case, our catalyst is what makes it possible for rain to form.
+            </p>
+            <div style="text-align: center;">
+                <img src="img/catalystenergydiagram-56a12b265f9b58b7d0bcb2fe.jpg.png" style="height: 40%; width: 40%;">
+                <p class="bodies">Shown above is a graph of a generic reaction, with catalysts and how they affect the
+                    proceeding! The red line
+                    represents how the reaction proceeds with an added catalyst, we can visualise how we need much less
+                    energy to crest over smaller steps, rather than a ton of energy to make it over a big hill. This
+                    shows how catalysts help us simplify a reaction by breaking it down into smaller, easier steps, or
+                    speeding up / adding energy to an existing system to help it proceed more efficiently!</p>
+            </div>
+        </div>
+    </div>
+
+    <hr id="lines">
+
+    <!--FAQ Section -->
+    <div>
+
+        <h2 style="margin-top: 50px;"><em>Questions We Asked</em></h2>
+        <h6 style="text-align: center; margin-bottom: 25px;">Hover & Click for Details!</h6>
+        <table id="table01questions">
+
+            <tr>
+                <td>
+                    <div>
+                        <div class="dropdown">
+                            <button onclick="myFunction(1)" class="dropbtn">How does temperature change affect the
+                                nucleation process?</button>
+                            <div id="myDropdown1" class="dropdown-content">
+                                <p>The warmer the earth is, the more evaporation will happen, which in turn leads to
+                                    more rain, which is why we see more flooding as the years go by and global warming
+                                    continues ramping up. As we know, between 0 and -10 degrees or below, we will see
+                                    snow if there are any waterfalls. Nucleation is a process where the molecules in a
+                                    liquid start to gather into tiny clusters, arranging in a way that will define the
+                                    crystal structure of the solid</p>
+                                <img src="img/Firefly make a picture that shows the process of a raindrop forming 46839.jpg"
+                                    class="img01">
+                            </div>
+                        </div>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button onclick="myFunction(2)" class="dropbtn">Can rain form without sandstorms?</button>
+                        <div id="myDropdown2" class="dropdown-content">
+                            <p>Yes, sandstorms are a big cause of rain storms but not the only cause, lots of different
+                                small particles (cloud condensation nuclei or CCN) released into the air can end up
+                                becoming rain.</p> <img
+                                src="img/Firefly show me a rainy sandstorm, make it show a ton of sand, flying everywhere 35540.jpg"
+                                class="img01">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button onclick="myFunction(3)" class="dropbtn">How do clouds support this process?</button>
+                        <div id="myDropdown3" class="dropdown-content">
+                            <p>The clouds don’t technically “support” this process, more they “are” the process, because
+                                these clouds are just groups of raindrops that haven’t fallen yet, so they aren’t their
+                                own being per-say, but part of the process.</p>
+                            <img src="img/Firefly show me how clouds support the process of making rain, and how water is stored in a cloud. 5.jpg"
+                                class="img01">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="dropdown">
+                        <button onclick="myFunction(4)" class="dropbtn">For winds coming down from the poles, can rain
+                            form without the presence of sand?
+                        </button>
+                        <div id="myDropdown4" class="dropdown-content">
+                            <p>Rain can form around different particles called Cloud Condensation Nuclei, which can be
+                                dust/sand, smoke, salt, or pollution. Red and green algae can also cause coloured rain,
+                                but typically these algaes are so small that you own’t be able to see the colour.</p>
+                            <img src="img/Firefly show me rain at one of the earths poles 31618.jpg" class="img01">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button onclick="myFunction(5)" class="dropbtn">How do Hurricanes/Cyclones affect this process,
+                            and is it more likely to rain during this process?
+                        </button>
+                        <div id="myDropdown5" class="dropdown-content">
+                            <p>Hurricanes bring moist air into the centre of them because of the spiralling they do,
+                                which adds to the thunderstorms/rainfall that we see around hurricanes sometimes. They
+                                also hold more water vapour, which can produce heavier rainfall.
+
+                            </p>
+                            <img src="img/Firefly show me a super intense hurricane with lots of clouds and rain 32461.jpg"
+                                class="img01">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button onclick="myFunction(6)" class="dropbtn">What are the most common elements and molecules
+                            found in rain, except for water?
+                        </button>
+                        <div id="myDropdown6" class="dropdown-content">
+                            <p>Rainwater is a mixed electrolyte that contains varying amounts of major and minor ions.
+                                Sodium, potassium, magnesium, calcium, chloride, bicarbonate, and sulphate ions are
+                                major constituents, together with ammonia, nitrate, nitrite, nitrogen, and other
+                                nitrogenous compounds (Hutchinson, 1957).
+                            </p>
+                            <img src="img/Firefly show me a list of common elements in water 32519.jpg" class="img01">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="dropdown">
+                        <button onclick="myFunction(7)" class="dropbtn">How is the salt content of rain influenced or
+                            changed in this process?
+
+                        </button>
+                        <div id="myDropdown7" class="dropdown-content">
+                            <p>Rain is caused by evaporation, and salt is typically too heavy to go up with the water
+                                molecules, so the salt content doesn’t change much. The main case where we would see
+                                some form of salt in the precipitation would be if the aerosol particle that the rain
+                                nucleated on was a form of salt.
+                            </p>
+                            <img src="img/Firefly show me how the salt content of rain is changed throughout the process of it being made, ins.jpg"
+                                class="img01">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button onclick="myFunction(8)" class="dropbtn">What are different types of rain?
+                        </button>
+                        <div id="myDropdown8" class="dropdown-content">
+                            <p>Acid rain, snow, hail, normal rain, heavy rain, coloured rain.
+                            </p> <img src=img/giphy.gif class="img01">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button onclick="myFunction(9)" class="dropbtn">Why does rain only happen sometimes, and doesn’t
+                            always happen even if there are heavy clouds above.
+                        </button>
+                        <div id="myDropdown9" class="dropdown-content">
+                            <p>You need about 1 million cloud droplets to form a rain drop, and you need to have the
+                                right conditions for all of the cloud droplets and rain droplets to merge. Clouds can
+                                often be thick enough to block out the sun, but not have enough water content inside
+                                them to make rain. Stratus clouds specifically do not contain enough moisture to make
+                                heavy rain, but might have a small drizzle at some point. Interestingly, showers come
+                                from a different type of cloud than rain, even though they tend to be interchangeable
+                                terms. Showers come from connective clouds like cumulus congestus, whereas rain comes
+                                from clouds like cumulonimbus or nimbostratus most typically. (Cloud type visuals)
+                            </p>
+                            <img src="img/Firefly show me water falling from the sky 42438.jpg" class="img01">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div>
+        <h2>So how does rain actually form?</h2>
+        <p class="bodies">To artificially nucleate raindrops, the most usual catalyst used is silver iodide. The reason
+            that we don’t see more artificially created rain is because silver iodide is known to be toxic to human and
+            animals. The reaction of rain is water vapour (g) + heat → water/rain (l).
+
+            The reason rain nucleation makes rain instead of just clouds is that when too many rain particles stick
+            together, it gets heavier and heavier slowly, until eventually gravity takes over and the water has to start
+            falling. If the temperature in the cloud is below zero, we will get snow, hail, or freezing rain instead of
+            normal rain. This is also how acid rain is formed, but it includes compounds like sulphur dioxide and
+            nitrogen oxide being released into the air and reacting with the water particles, and forming acidic
+            pollutants more commonly known as acid rain.
+
+            If there is a sandstorm somewhere in the world, (most likely large deserts) the wind will pick up the sand
+            and carry it far across the earth, collecting water particles as they go. Once they have travelled far
+            enough and collected enough water, it will create rain. The more sand that flies around, the bigger the rain
+            storm is, since there are more catalysts to react with.
+        </p>
+    </div>
+
+    <br> <br>
+    <h5>Citations</h5>
+    <P class="bodies" style="margin-bottom: 200px;">
+        Libretexts. (2022, December 9). 7: Precipitation processes. <a
+            href="https://geo.libretexts.org/Bookshelves/Meteorology_and_Climate_Science/Practical_Meteorology_(Stull)/07%3A_Precipitation_Processes"
+            target="_blank">Geosciences LibreTexts.</a><br>
+        Jacobs, J. (2022, September 12). Can bio-precipitation and cloud seeding elevate snow levels?. <a
+            href="https://snowbrains.com/can-bio-precipitation-and-cloud-seeding-elevate-snow-levels1/"
+            target="_blank">SnowBrains.</a><br>
+        Wikipedia contributors. (2024, February 25). Cloud seeding. <a
+            href="https://en.wikipedia.org/wiki/Cloud_seeding" target="_blank">Wikipedia.</a><br>
+        Student Project: Make a Cloud in a Bottle | NASA/JPL Edu. (2019, March 13). <a
+            href="https://www.jpl.nasa.gov/edu/learn/project/make-a-cloud-in-a-bottle/" target="_blank">NASA/JPL
+            Edu.</a><br>
+    </P>
+
+    <p>Chemistry 12, Logan & Grace</p>
+</body>
+
+</html>
